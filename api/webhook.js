@@ -6,12 +6,12 @@ module.exports = async (req, res) => {
     }
 
     // Process the webhook payload
-    const payload = req.body; // Assuming the payload is in the request body
+    const payload = req.body;
 
     // Do something with the payload
     console.log("Webhook received:", payload);
 
-    // Return a response (optional)
+    // Return a response
     res.status(200).json({ message: "Webhook received successfully!" });
   } catch (error) {
     console.error("Webhook error:", error);
