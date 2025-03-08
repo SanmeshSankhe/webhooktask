@@ -19,7 +19,7 @@ app.use((req, res, next) => {
 });
 
 app.post("/webhook", (req, res) => {
-  console.log("Request==>", res);
+  console.log("Request==>", req);
   console.log("Webhook request received!", res);
   res.sendStatus(200);
 });
