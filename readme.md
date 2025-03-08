@@ -12,7 +12,3 @@ This project consists of two main components:
 ## Payload Decoder (Python)
 
 The Python script reads a structured payload from `file.txt`, extracts position data, and constructs a matrix representation of the payload.
-
-### Dependencies
-
-- [NumPy](https://numpy.org/)
