@@ -19,8 +19,9 @@ app.use((req, res, next) => {
 });
 
 app.post("/webhook", (req, res) => {
+  console.log("Request==>", res);
   console.log("Webhook request received!", res);
-  // res.sendStatus(202);
+  res.sendStatus(200);
 });
 
 app.listen(port, () => console.log(`Webhook server running on port ${port}`));
